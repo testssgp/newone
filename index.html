@@ -2,6 +2,15 @@
 
 <body>
   <embed type="text/html" src="https://script.google.com/macros/s/AKfycbwjsh0p-Fr5DdE8T4kG7sRgCKjsqjXAigjVmI9Tf1L3zF_nTImn_2i7oJKK2f0DvjPV/exec" width="100%" height="100%" frameborder="0" style="border:none;" >
+  <script>
+    window.addEventListener("load", (event) => {
+      console.log("page is fully loaded");
+      var x = document.querySelector("#warning.warning-bar");
+      console.log(x);
+      var y = document.querySelector("#warning-bar-table");
+      console.log(y);
+    });
+  </script>
 </body>
 <!--
 <head>
@@ -9,10 +18,6 @@
 </head>
 <script>
   window.location.href = 'https://script.google.com/macros/s/AKfycbwjsh0p-Fr5DdE8T4kG7sRgCKjsqjXAigjVmI9Tf1L3zF_nTImn_2i7oJKK2f0DvjPV/exec';
-</script>
-<script>
-  var x = document.querySelector("#warning.warning-bar");
-  console.log(x);
 </script>
 <iframe src="https://script.google.com/macros/s/AKfycbwjsh0p-Fr5DdE8T4kG7sRgCKjsqjXAigjVmI9Tf1L3zF_nTImn_2i7oJKK2f0DvjPV/exec" width="100%" height="100%" frameborder="0" style="border:none;" ></iframe>
 -->
