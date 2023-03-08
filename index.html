@@ -15,7 +15,9 @@
     window.addEventListener("load", (event) => {
       console.log("load page complete");
       const frames = document.getElementsByTagName("iframe");
-      for(var frame of frames){
+      console.log(frames);
+      const frames2 = frames.contentWindow.document.getElementsByTagName("iframe");
+      for(var frame of frames2){
         console.log(frame);
         frame.setAttribute("sandbox", "allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation"); 
       }
