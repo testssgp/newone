@@ -16,7 +16,7 @@
     window.visualViewport.addEventListener("resize", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      alert(`window.visualViewport.scale:  ${window.visualViewport.scale}  window.visualViewport.height:  ${window.visualViewport.height} window.devicePixelRatio:  ${window.devicePixelRatio} window.outerHeight:  ${window.outerHeight}`);
+      alert(`window.visualViewport.scale:  ${window.visualViewport.scale}  window.visualViewport.height:  ${window.visualViewport.height} window.devicePixelRatio:  ${window.devicePixelRatio} window.outerHeight:  ${window.outerHeight}  window.innerHeight:  ${window.innerHeight}`);
       //document.body.style.height = (window.visualViewport.height*window.visualViewport.scale*window.devicePixelRatio) + 'px';
       //document.body.style.height = (window.visualViewport.height*window.visualViewport.scale) + 'px';
     });
