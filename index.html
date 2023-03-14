@@ -16,9 +16,9 @@
     window.visualViewport.addEventListener("resize", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      alert(`window.visualViewport.scale:  ${window.visualViewport.scale}  window.visualViewport.height:  ${window.visualViewport.height} window.devicePixelRatio:  ${window.devicePixelRatio} window.outerHeight:  ${window.outerHeight}  window.innerHeight:  ${window.innerHeight}  window.screen.availHeight: ${window.screen.availHeight}`);
+      //alert(`window.visualViewport.scale:  ${window.visualViewport.scale}  window.visualViewport.height:  ${window.visualViewport.height} window.devicePixelRatio:  ${window.devicePixelRatio} window.outerHeight:  ${window.outerHeight}  window.innerHeight:  ${window.innerHeight}  window.screen.availHeight: ${window.screen.availHeight}`);
       //document.body.style.height = (window.visualViewport.height*window.visualViewport.scale*window.devicePixelRatio) + 'px';
-      //document.body.style.height = (window.visualViewport.height*window.visualViewport.scale) + 'px';
+      document.body.style.height = (window.innerHeight) + 'px';
     });
   </script>
 </body>
