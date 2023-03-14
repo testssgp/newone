@@ -14,10 +14,9 @@
           sandbox="allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-presentation" style="overflow:visible;"></iframe>
   <script>
     window.visualViewport.addEventListener("resize", (e) => {
-      alert(`window.visualViewport.scale:  ${window.visualViewport.scale}`);
-    });
-    window.addEventListener("resize",function(){
-      alert('resize');
+      e.preventDefault();
+      e.stopPropagation();
+      //alert(`window.visualViewport.scale:  ${window.visualViewport.scale}`);
     });
   </script>
 </body>
