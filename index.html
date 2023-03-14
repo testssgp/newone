@@ -18,7 +18,7 @@
       e.stopPropagation();
       //document.getElement
       alert(`window.visualViewport.scale:  ${window.visualViewport.scale}  window.visualViewport.height:  ${window.visualViewport.height}`);
-      document.body.style.height = window.visualViewport.height + 'px';
+      document.body.style.height = (window.visualViewport.height*window.visualViewport.scale) + 'px';
     });
   </script>
 </body>
