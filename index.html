@@ -16,7 +16,7 @@
     window.visualViewport.addEventListener("resize", (e) => {
       alert(`window.visualViewport.scale:  ${window.visualViewport.scale}`);
     });
-    $(window).resize(function(){
+    window.addEventListener("resize",function(){
       alert('resize');
     });
   </script>
